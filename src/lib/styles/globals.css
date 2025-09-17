@@ -1,0 +1,24 @@
+@import "tailwindcss";
+html{
+    background-color: black;
+}
+@keyframes pulseRed {
+    0% {
+        opacity: 0.08;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.08;
+    }
+}
+
+.animate-pulse-red {
+    animation: pulseRed 3s infinite ease-in-out;
+    background: radial-gradient(ellipse at center,
+            rgba(255, 0, 0, 0.06),
+            transparent 40%);
+}
