@@ -16,21 +16,12 @@ function getColorClass(days: number) {
 }
 
 function getColor(days: number) {
-  if (days < 1) return "red";        // bad
-  if (days < 3) return "orange";     // risky
-  if (days < 7) return "yellow";     // okay
-  if (days < 14) return "green";     // stable
-  if (days < 30) return "blue";      // good
-  return "purple";                   // legendary
-}
-
-function getColorNeg(days: number) {
-  if (days < 1) return "red";        // bad
-  if (days < 3) return "orange";     // risky
-  if (days < 7) return "yellow";     // okay
-  if (days < 14) return "green";     // stable
-  if (days < 30) return "blue";      // good
-  return "purple";                   // legendary
+  if (days < 1) return "#EF4444";   // red-500 (bad)
+  if (days < 3) return "#F97316";   // orange-500 (risky)
+  if (days < 7) return "#FACC15";   // yellow-400 (okay)
+  if (days < 14) return "#22C55E";  // green-500 (stable)
+  if (days < 30) return "#60A5FA";  // blue-400 (good)
+  return "#A78BFA";                 // purple-400 (legendary)
 }
 
 export default function DoomsdayCounterPage() {
