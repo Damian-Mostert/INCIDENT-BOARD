@@ -114,7 +114,10 @@ export default function DoomsdayCounterPage() {
         <div className="flex items-center gap-4">
           <button
             onClick={handleReset}
-            className={`px-4 py-2 text-white rounded-md border border-[${getColor(days)}]  text-sm md:text-base uppercase`}
+            className={`px-4 py-2 text-white rounded-md border  text-sm md:text-base uppercase`}
+            style={{
+              borderColor:getColor(days)
+            }}
           >
             Reset
           </button>
