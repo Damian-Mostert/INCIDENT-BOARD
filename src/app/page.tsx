@@ -116,7 +116,8 @@ export default function DoomsdayCounterPage() {
             onClick={handleReset}
             className={`px-4 py-2 text-white rounded-md border  text-sm md:text-base uppercase`}
             style={{
-              borderColor:getColor(days)
+              borderColor:getColor(days),
+              color:getColor(days)
             }}
           >
             Reset
